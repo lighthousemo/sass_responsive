@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Address Book</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <ul class="nav">
+      <% contacts.forEach(function(contact) { %>
+        <li><a href="#"><%= contact.name %></a></li>
+      <% }) %>
+      </ul>
+    </div>
+    <div class="main">
+      <h1>Hello there!</h1>
+      <% contacts.forEach(function(contact) { %>
+        <div class="card">
+          <div class="header">
+            <%= contact.name %>
+          </div>
+          <div class="content">
+            <img src="<%= contact.image_url %>" alt="Contact Image" />
+          </div>
+          <div class="footer">
+            <a class="btn">View More</a>
+          </div>
+      <% }) %>
+    </div>
+  </div>
+</body>
+</html>
