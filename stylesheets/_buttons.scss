@@ -1,0 +1,13 @@
+// _buttons.scss
+
+.btn {
+  height: 14px;
+  display: inline-block;
+  background-color: $btnDefault;
+  border-radius: 2px;
+  color: $lightTextColor;
+  padding: 4px;
+  &:hover {
+    background-color: $btnDefault * 0.8;
+  }
+}
