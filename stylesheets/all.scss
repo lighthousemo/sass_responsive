@@ -1,0 +1,30 @@
+a {
+  color: #5d5da8;
+}
+/* Antipattern! */
+// .nav {
+//   list-style: none;
+// }
+
+/* The better way */
+.sidebar {
+  .nav {
+    list-style: none;
+    li {
+      margin: 8px 0;
+      // a { text-decoration: none; }
+      // a:hover { text-decoration: underline; }
+      a {
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+        &:visited { color: blue; }
+      }
+
+      &.active a { color: red; }
+    }
+  }
+}
+
+.main {
+  color: #333;
+}

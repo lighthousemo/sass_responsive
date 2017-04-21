@@ -1,13 +1,15 @@
 <html>
 <head>
   <title>Address Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/all.css">
 </head>
 <body>
   <div class="container">
     <div class="sidebar">
       <ul class="nav">
-      <% contacts.forEach(function(contact) { %>
-        <li><a href="/contact/<%= contact.id %>"><%= contact.name %></a></li>
+      <% contacts.forEach(function(thisContact) { %>
+        <li class="<%= (thisContact.id === contact.id ? 'active' : '') %>"><a href="/contact/<%= thisContact.id %>"><%= thisContact.name %></a></li>
       <% }) %>
       </ul>
     </div>
