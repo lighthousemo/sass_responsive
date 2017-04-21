@@ -12,7 +12,7 @@
       </ul>
     </div>
     <div class="main">
-      <h1>Hello there!</h1>
+      <h1>The Awesome Address Book App</h1>
       <% if(contact) { %>
         <div class="card">
           <div class="header">
@@ -21,6 +21,7 @@
           <div class="content">
             <img src="<%= contact.image_url %>" alt="Contact Image" />
           </div>
+          <a class="view-more" href="#">View more</a>
         </div>
       <% } else { %>
         Select a contact from the nav.

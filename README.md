@@ -10,6 +10,7 @@ CSS HTML jQuery              front-end dev                express mongo API
 ## SASS
 
   - installation with `node-sass`
+  - npm script: `./node_modules/node-sass/bin/node-sass --watch --recursive --output public stylesheets`
   - nesting
   - variables
   - math operations ex: lighten / darken colours
