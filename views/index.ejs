@@ -7,13 +7,13 @@
     <div class="sidebar">
       <ul class="nav">
       <% contacts.forEach(function(contact) { %>
-        <li><a href="#"><%= contact.name %></a></li>
+        <li><a href="/contact/<%= contact.id %>"><%= contact.name %></a></li>
       <% }) %>
       </ul>
     </div>
     <div class="main">
       <h1>Hello there!</h1>
-      <% contacts.forEach(function(contact) { %>
+      <% if(contact) { %>
         <div class="card">
           <div class="header">
             <%= contact.name %>
@@ -21,10 +21,10 @@
           <div class="content">
             <img src="<%= contact.image_url %>" alt="Contact Image" />
           </div>
-          <div class="footer">
-            <a class="btn">View More</a>
-          </div>
-      <% }) %>
+        </div>
+      <% } else { %>
+        Select a contact from the nav.
+      <% } %>
     </div>
   </div>
 </body>
