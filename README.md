@@ -1,3 +1,12 @@
+
+### A map of developer skills
+```
+front end                                             back-end dev
+<-------------------------------------------------------------->
+CSS HTML jQuery              front-end dev                express mongo API
+     SASS
+```
+
 ## SASS
 
   - installation with `node-sass`
