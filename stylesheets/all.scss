@@ -8,6 +8,10 @@ a {
 
 /* The better way */
 .sidebar {
+  float: left;
+  width: 30%;
+  // min-width: 200px;
+  background-color: #999;
   .nav {
     list-style: none;
     li {
@@ -23,8 +27,24 @@ a {
       &.active a { color: red; }
     }
   }
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 .main {
+  // width: ~calc(70% - 16px);
+  width: 70%;
+  background-color: tomato;
+  float: right;
   color: #333;
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 1em;
+    }
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 }
+
