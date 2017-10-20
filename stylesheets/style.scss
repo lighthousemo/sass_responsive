@@ -1,0 +1,64 @@
+// Import the layouts styles from _layouts.scss
+@import 'colours';
+@import 'layouts';
+
+.container {
+  h1 {
+    background-color: $bgLight;
+    &:hover {
+      background-color: tomato;
+    }
+  }
+  // h1:hover {
+  //   background-color: tomato;
+  // }
+}
+
+@mixin good-shadow() {
+  box-shadow: 2px 0px 38px 6px #999999;
+  border: 1px solid #333;
+}
+
+.main {
+  .card {
+    @include good-shadow();
+    padding: 10px;
+  }
+}
+
+.sidebar {
+  @include good-shadow();
+}
+
+/* Fonts */
+
+.card {
+  font-size: 1rem;
+  .header {
+    font-size: 1.5em;
+  }
+  .view-more {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

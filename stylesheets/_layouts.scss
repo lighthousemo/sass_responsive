@@ -1,0 +1,32 @@
+/* Layout Styles */
+
+.sidebar {
+  float: left;
+  background-color: $bgLight;
+  // width: 30vw;
+  // width: 30%;
+  // max-width: 200px;
+  ul.nav {
+    list-style: none;
+    padding: 25px;
+    li {
+      margin: 5px 0 5px 0;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+
+.main {
+  // width: 70%;
+  margin-left: 149px;
+}
+@media (max-width: 600px) {
+  .main {
+    margin-left: 0;
+  }
+}
